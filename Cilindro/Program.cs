@@ -12,12 +12,12 @@ namespace Cilindro
           Console.WriteLine("Diz o Raio do cilindro");
           double Raio = Convert.ToDouble(Console.ReadLine());
 
-          double Volume = Math.PI * (Raio * Raio) * Altura;
+          double Volume = Math.PI * Math.Pow (Raio, 2) * Altura;
           Console.WriteLine("Volume " + Volume);
 
           double Area = 2 * Math.PI * Raio * (Raio + Altura);
 
-          Console.WriteLine("Área " + Area);
+          Console.WriteLine("Area" + Area);
 
         }
     }
